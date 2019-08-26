@@ -16,7 +16,7 @@ const app = express();
 console.log(process.env);
 
 
-app.use('/test', (req, res) => {
+app.get('/test', (req, res) => {
     res.send("DZIALA");
 })
 
