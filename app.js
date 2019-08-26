@@ -16,6 +16,9 @@ const app = express();
 console.log(process.env);
 
 
+app.use('/test', (req, res) => {
+    res.send("DZIALA");
+})
 
 app.use(bodyParser.json());
 app.use('/users', userRouter);
