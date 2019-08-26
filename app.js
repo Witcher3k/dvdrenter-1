@@ -15,7 +15,9 @@ const authMiddleware = require('./middlewares/auth').authMiddleware;
 const app = express();
 console.log(process.env);
 
-
+app.get('/', (req, res) => {
+    res.send("DZIALA");
+})
 app.get('/test', (req, res) => {
     res.send("DZIALA");
 })
